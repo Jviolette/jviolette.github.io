@@ -1,0 +1,176 @@
+/*Whole web site*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    line-height: 1.6;
+    color:#cbf3d2;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:#cbf3d2;
+}
+
+h1,
+h2 {
+    margin:10px 0;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 700px; 
+}
+/*Navbar*/
+
+.navbar {
+    background-color:#7b287d;
+    height: 100px;
+}
+
+.navbar ul {
+    display:flex;
+    margin-top: 10px;
+}
+
+.navbar a {
+    margin: 15px;
+    
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding:6 40px;
+}
+
+.flex {
+    display: flex;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar a:hover {
+    border-bottom:2px #cbf3d2 solid;
+    
+}
+
+/*showcase*/
+
+.showcase {
+    height: 225px;
+    background-color: #7b287d;   
+    color: #cbf3d2;
+    position:relative;
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+.showcase .grid {
+    overflow: visible;
+    display: grid;
+    grid-template-columns:55% 45%;
+    gap: 40px;
+}
+
+.showcase::before,
+.showcase::after {
+    content:"";
+    position: absolute;
+    height: 100px;
+    bottom: -65px;
+    right: 0;
+    left: 0;
+    background-color:white;
+    transform: skewY(-2.5deg);
+}
+
+.showcase-form {
+    outline:none;
+}
+
+/*form*/
+
+.showcase-form {
+    position: relative;
+    top: 10px;
+    left: 125px;
+    height: 230px;
+    width: 300px;
+}
+
+.showcase-form .form-control {
+    margin: 15px 0;
+}
+
+.showcase-form input[type='text']
+{
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 3px;
+    font-size: 14px;
+}
+.card {
+    background-color: white;
+    color: black;
+    border-radius: 0px;
+    box-shadow: 0 3px 10px rgba(0,0,0, .5);
+    padding: 20px;
+    margin: 10px;
+    z-index: 100;
+}
+
+.btn-form {
+    display: inline-block;
+    padding: 2px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #b7c0ee;
+}
+
+.btn-form:hover {
+    transform: scale(0.9);
+}
+
+/*mid*/
+
+.mid {
+    background-color: white;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    color:black
+}
+
+
+/*footer*/
+
+.footer {
+    padding-top: 10px;
+    background-color:aquamarine;
+    color: black;
+    margin: auto;
+
+    
+}
